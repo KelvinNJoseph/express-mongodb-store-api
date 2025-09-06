@@ -7,10 +7,14 @@ const url = process.env.MONGO_URI;
 
 const start = async () =>{
     try {
-        await connectDB(url)
-        console.log('Success!!')
+        await connectDB(url);
+        await Product.deleteMany();
+        await Product.create(jsonProducts);
+        console.log('Success!!');
+        process.exit(0);
     } catch (error) {
-        console.log(TypeError)
+        console.log(error)
+        process.exit(1);
     }
 }
 
