@@ -18,8 +18,8 @@ This project demonstrates advanced query features and clean API design for e-com
 
 ⚙️ Setup & Run Locally
 1. Clone the repository
-git clone https://github.com/<your-username>/task-manager.git
-cd task-manager
+git clone https://github.com/<your-username>/express-mongodb-store-api.git
+cd express-mongodb-store-api
 
 ### 2. Install dependencies 
 npm install
